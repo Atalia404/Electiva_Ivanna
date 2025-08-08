@@ -1,0 +1,27 @@
+div {
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h3,
+ul,
+ol {
+    font-size: 25px;
+}
+
+p {
+    color: purple
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0px;
+}
+
+.lista-de-gatos {
+    color: chocolate
+}
+
