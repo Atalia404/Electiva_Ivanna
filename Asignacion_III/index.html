@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mascoticalogo.png" type="image/x-icon">
+    <title >Mascoticas - Adopta un Amigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="funciones.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="mascoticalogo.png" alt="Logo de Mascoticas" class="h-10 w-10 rounded-full">
+                <span class="text-2xl font-bold text-blue-400">Mascoticas</span>
+            </a>
+
+            <div class="hidden md:flex text-xl items-center space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-400 transition-colors">Home</a>
+                <a href="#refugios" class="text-gray-600 hover:text-blue-400 transition-colors">Refugios</a>
+                <a href="#perros" class="text-gray-600 hover:text-blue-400 transition-colors">Perros</a>
+                <a href="#gatos" class="text-gray-600 hover:text-blue-400 transition-colors">Gatos</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-400 transition-colors">Contacto</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href = "ingreso.html" class="bg-blue-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-500 transition-colors">Ingresar</a>
+        
+                <a href = "registro.html" class="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-colors">Registrarse</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="menuPrincipal" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="menuDesplegable" class="hidden md:hidden bg-white shadow-lg py-2 absolute w-full top-full">
+            <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#refugios" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Refugios</a>
+            <a href="#perros" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Perros</a>
+            <a href="#gatos" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Gatos</a>
+            <a href="#contacto" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+            <hr class="my-2">
+            <a href="ingreso.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-100">Ingresar</a>
+            <a href="registro.html" class="block px-4 py-2 text-green-500 hover:bg-gray-100">Registrarse</a>
+        </div>
+    </nav>
+
+    <header id="home" class="header-bg relative flex items-center justify-center text-center text-white py-24">
+        <div class="absolute inset-0 bg-blue-700 opacity-100">
+            <img src="header.jpg" alt="Imagen de mascotas"
+                class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative z-10 p-6">
+            <h1 class="text-6xl md:text-6xl font-extrabold mb-4">Adopta, No Compres.</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Tu hogar está incompleto sin ellos. Dales una segunda oportunidad, ellos te darán amor infinito..</p>
+
+            <a href="#perros"
+                class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors">Adopciones diponibles</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <section id="refugios" class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestros Refugios Asociados</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Colaboramos con los mejores refugios para asegurar que cada mascota reciba el cuidado que merece.</p>
+    
+            <div class="mt-20 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+    
+                <div class="flex flex-col items-center">
+                    <a href="https://www.instagram.com/lasandivzla/" target="_blank">
+                    <img class="rounded-full w-24 h-24" src="lasandilogo.jpg" alt="logo de la liga animalista de San Diego"></a>
+                    <p class="mt-2 flex items-center justify-center space-x-2 text-gray-700 font-semibold">
+                        <svg class="w-[28px] h-[28px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="black" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                clip-rule="evenodd" />
+                        </svg><span>Lasandi</span></p>
+                </div>
+    
+                <div class="flex flex-col items-center">
+                    <a href="https://www.instagram.com/manosxpatas/?hl=es" target="_blank">
+                    <img class="rounded-full w-24 h-24" src="manosxpataslogo.jpg" alt="logo Manos x Patas"></a>
+                    <p class="mt-2 flex items-center justify-center space-x-2 text-gray-700 font-semibold">
+                        <svg class="w-[28px] h-[28px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="black" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                clip-rule="evenodd" />
+                        </svg><span>ManosxPatas</span>
+                    </p>
+                </div>
+    
+                <div class="flex flex-col items-center">
+                    <a href="https://www.instagram.com/litosmanada/" target="_blank">
+                        <img class="rounded-full w-24 h-24" src="litosmanadalogo.jpg" alt="logo de litos manada, proteccionistas independientes"></a>
+                    <p class="mt-2 flex items-center justify-center space-x-2 text-gray-700 font-semibold">
+                        <svg class="w-[28px] h-[28px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="black" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                clip-rule="evenodd" />
+                        </svg><span>Litos Manada</span>
+                    </p>
+                </div>
+    
+                <div class="flex flex-col items-center">
+                    <a href="https://www.instagram.com/adoptaungato__/" target="_blank">
+                        <img class="rounded-full w-24 h-24" src="adoptaungatologo.jpg"
+                            alt="logo de proteccionista adopta un gato"></a>
+                    <p class="mt-2 flex items-center justify-center space-x-2 text-gray-700 font-semibold">
+                        <svg class="w-[28px] h-[28px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="black" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                clip-rule="evenodd" />
+                        </svg><span>AdoptaUnGato</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="perros" class="mb-16">
+
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Perros en Adopción</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <img src="https://via.placeholder.com/300x200.png?text=Perro+1" alt="Perro en adopción"
+                        class="rounded-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold">Max</h3>
+                    <p class="text-gray-600">Juguetón y leal.</p>
+                    <button
+                        class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <img src="https://via.placeholder.com/300x200.png?text=Perro+2" alt="Perro en adopción"
+                        class="rounded-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold">Bella</h3>
+                    <p class="text-gray-600">Amigable y cariñosa.</p>
+                    <button
+                        class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gatos" class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Gatos en Adopción</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <img src="https://via.placeholder.com/300x200.png?text=Gato+1" alt="Gato en adopción"
+                        class="rounded-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold">Milo</h3>
+                    <p class="text-gray-600">Curioso y tranquilo.</p>
+                    <button
+                        class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <img src="https://via.placeholder.com/300x200.png?text=Gato+2" alt="Gato en adopción"
+                        class="rounded-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold">Luna</h3>
+                    <p class="text-gray-600">Juguetona y aventurera.</p>
+                    <button
+                        class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-blue-400 text-white p-12 rounded-lg text-center">
+            <h2 class="text-4xl font-bold mb-4">¿Tienes preguntas? Contáctanos.</h2>
+            <p class="text-lg max-w-2xl mx-auto">Estamos aquí para ayudarte a encontrar al compañero perfecto. No dudes
+                en escribirnos.</p>
+            <a href="#"
+                class="mt-8 inline-block bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors">Enviar
+                Mensaje</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Mascoticas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
