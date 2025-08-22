@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="mascoticalogo.png" type="image/x-icon">
+    <link rel="icon" href="img/mascoticalogo.png" type="image/x-icon">
     <title >Mascoticas - Adopta un Amigo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="style.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
             <a href="index.html" class="flex items-center space-x-2">
-                <img src="mascoticalogo.png" alt="Logo de Mascoticas" class="h-10 w-10 rounded-full">
+                <img src="img/mascoticalogo.png" alt="Logo de Mascoticas" class="h-10 w-10 rounded-full">
                 <span class="text-2xl font-bold text-blue-400">Mascoticas</span>
             </a>
 
@@ -57,7 +57,7 @@
 
     <header id="home" class="header-bg relative flex items-center justify-center text-center text-white py-24">
         <div class="absolute inset-0 bg-blue-700 opacity-100">
-            <img src="header.jpg" alt="Imagen de mascotas"
+            <img src="img/header.jpg" alt="Imagen de mascotas"
                 class="w-full h-full object-cover opacity-50">
         </div>
         <div class="relative z-10 p-6">
@@ -131,62 +131,76 @@
 
         <section id="perros" class="mb-16">
 
-            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Perros en Adopción</h2>
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Perritos esperando por amor ❤ </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <img src="https://via.placeholder.com/300x200.png?text=Perro+1" alt="Perro en adopción"
+                    <img src="perritoAdopcion1.jpg" alt="Perro en adopción"
                         class="rounded-lg mb-4 w-full">
-                    <h3 class="text-xl font-bold">Max</h3>
-                    <p class="text-gray-600">Juguetón y leal.</p>
+                    <h3 class="text-xl font-bold">UMA</h3>
+                    <p class="text-gray-600">Tranquila, sumisa y juguetona.</p>
                     <button
                         class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <img src="https://via.placeholder.com/300x200.png?text=Perro+2" alt="Perro en adopción"
+                    <img src="perritoAdopcion2.jpg" alt="Perro en adopción"
                         class="rounded-lg mb-4 w-full">
-                    <h3 class="text-xl font-bold">Bella</h3>
-                    <p class="text-gray-600">Amigable y cariñosa.</p>
+                    <h3 class="text-xl font-bold">LEO</h3>
+                    <p class="text-gray-600">Tranquilo, cariñoso y jugueton.</p>
                     <button
                         class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <img src="perritoAdopcion3.jpg" alt="Perro en adopción"
+                        class="rounded-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold">MANI</h3>
+                    <p class="text-gray-600">Tranquilo y jugueton.</p>
+                    <button class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
                 </div>
             </div>
         </section>
 
         <section id="gatos" class="mb-16">
-            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Gatos en Adopción</h2>
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Gatitos esperando por amor ❤</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <img src="https://via.placeholder.com/300x200.png?text=Gato+1" alt="Gato en adopción"
+                    <img src="gatitoAdopcion1.jpg" alt="Gato en adopción"
                         class="rounded-lg mb-4 w-full">
-                    <h3 class="text-xl font-bold">Milo</h3>
+                    <h3 class="text-xl font-bold">APOLO</h3>
                     <p class="text-gray-600">Curioso y tranquilo.</p>
                     <button
                         class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <img src="https://via.placeholder.com/300x200.png?text=Gato+2" alt="Gato en adopción"
+                    <img src="gatitoAdopcion2.jpg" alt="Gato en adopción"
                         class="rounded-lg mb-4 w-full">
-                    <h3 class="text-xl font-bold">Luna</h3>
-                    <p class="text-gray-600">Juguetona y aventurera.</p>
+                    <h3 class="text-xl font-bold">SALEM</h3>
+                    <p class="text-gray-600">Jugueton y aventurero.</p>
                     <button
                         class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
                 </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <img src="gatitoAdopcion3.jpg" alt="Gato en adopción"
+                        class="rounded-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold">SIMBA</h3>
+                    <p class="text-gray-600">Dormilon y confianzudo.</p>
+                    <button class="mt-4 bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500">Adoptar</button>
+                </div>
             </div>
+
         </section>
 
         <section id="contacto" class="bg-blue-400 text-white p-12 rounded-lg text-center">
             <h2 class="text-4xl font-bold mb-4">¿Tienes preguntas? Contáctanos.</h2>
-            <p class="text-lg max-w-2xl mx-auto">Estamos aquí para ayudarte a encontrar al compañero perfecto. No dudes
-                en escribirnos.</p>
+            <p class="text-lg max-w-2xl mx-auto">Estamos aquí para ayudarte a encontrar al compañero perfecto. No dudes en escribirnos.</p>
             <a href="#"
-                class="mt-8 inline-block bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors">Enviar
-                Mensaje</a>
+                class="mt-8 inline-block bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors">Enviar Mensaje </a>
         </section>
     </main>
 
     <footer class="bg-gray-800 text-white py-8 mt-16">
         <div class="container mx-auto text-center">
-            <p>&copy; 2025 Mascoticas. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Mascoticas by Ivanna Espinoza. Todos los derechos reservados.</p>
         </div>
     </footer>
 
